@@ -19,9 +19,6 @@
                 todos.forEach(todo =>{
                     const li = document.createElement("li");
                     li.textContent = todo.title;
-                    if(todo.completed){
-                        li.classList.add("completed")
-                    }
                     todoList.appendChild(li);
                 });
             }catch(error){
