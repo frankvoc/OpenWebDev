@@ -5,14 +5,6 @@ const PORT = 3000;
 
 app.use(express.static(path.join(__dirname,"public")));
 
-let message = "PEPPER!!!!";
-
-function sayPepper(){
-    console.log(message);
-}
-
-//sayPepper()
-
 //Route
 app.get("/",(req, res)=>{
     res.sendFile(path.join(__dirname,"public","index.html"))
